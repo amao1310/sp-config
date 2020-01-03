@@ -1,6 +1,9 @@
 spring:
   application:
     name: order-service
+  cloud:
+    config:
+      override-none: true
     
 server:
   port: 8201
@@ -10,7 +13,7 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
       
-#ribbon 重试和 hystrix 超时这里没有设置，采用了默认值
+#ribbon 閲嶈瘯鍜� hystrix 瓒呮椂杩欓噷娌℃湁璁剧疆锛岄噰鐢ㄤ簡榛樿鍊�
 
 feign: 
   hystrix:

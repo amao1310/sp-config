@@ -1,4 +1,4 @@
-#其中 sp.user-service.users 属性为自定义属性，提供用于测试的用户数据
+#鍏朵腑 sp.user-service.users 灞炴�т负鑷畾涔夊睘鎬э紝鎻愪緵鐢ㄤ簬娴嬭瘯鐨勭敤鎴锋暟鎹�
 sp:
   user-service:
      users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"}]"
@@ -6,6 +6,9 @@ sp:
 spring:
   application:
     name: user-service
+  cloud:
+    config:
+      override-none: true
    
 server:
   port: 8101
